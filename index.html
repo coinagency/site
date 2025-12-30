@@ -175,7 +175,19 @@ header h1 { color:#00CED1; font-size:4em; margin-bottom:15px; letter-spacing:2px
 /* RESPONSIVE */
 @media(max-width:1200px){ .gallery img { width:calc(22% - 10px); } }
 @media(max-width:900px){ .gallery img { width:calc(30% - 10px); } .tally-embed{max-width:550px;height:700px;} }
-@media(max-width:600px){ .gallery img { width:calc(45% - 10px); } .tally-embed{max-width:100%;height:600px;} }
+@media(max-width:600px){ 
+  .gallery img { width:calc(45% - 10px); } 
+  .tally-embed{max-width:100%;height:600px;} 
+
+  /* VIDEO MOBILE */
+  .video-container div {
+    height:300px; /* hauteur réduite sur mobile */
+    box-shadow:0 0 35px rgba(0,206,209,0.7); /* lueur bleu adaptée */
+  }
+  .video-container iframe {
+    height:100%;
+  }
+}
 </style>
 </head>
 <body>
